@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_social"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_edit"
+        android:hint="请输入需要加密的文字"
+        android:lines="3"
+        android:maxLines="3"
+        android:padding="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_encode"
+            style="@style/borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="加密"/>
+
+        <Button
+            android:id="@+id/btn_decode"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="解密"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_generate_rsa_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="生成密钥对"/>
+
+    <TextView
+        android:id="@+id/tv_encode_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:lines="3"
+        android:textColor="@android:color/white"
+        tools:text="文字"/>
+
+    <TextView
+        android:id="@+id/tv_decode_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:lines="3"
+        android:textColor="@android:color/white"
+        tools:text="文字"/>
+
+    <TextView
+        android:id="@+id/tv_key_pair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary"
+        android:lines="3"
+        android:textColor="@android:color/white"
+        tools:text="文字"/>
+</LinearLayout>
